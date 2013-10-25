@@ -38,7 +38,7 @@ class API
      * @param  string  $resource  The resource of the api
      * @param  array  $args  Array of options for the query query
      * @throws Exception If the curl request fails
-     * @return  array  Finalized Url
+     * @return  array  json_decoded contents
      */
     public function request($resource, $args=array())
     {
