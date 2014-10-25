@@ -14,7 +14,7 @@ Add this to your composer.json
 ```JSON
 {
     "require": {
-        "ckdarby/php-uptimerobot": "dev-master"
+        "ckdarby/php-uptimerobot": "@stable"
     }
 }
 ```
