@@ -8,7 +8,7 @@ This is a basic PHP wrapper for https://uptimerobot.com/api
 * Must be running PHP >= 5.4
 * Format will be JSON & there will be no JSONCallback
 
-##Composer
+## Composer
 Add this to your composer.json
 
 ```JSON
