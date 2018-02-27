@@ -31,7 +31,7 @@ use UptimeRobot\API;
 //Set configuration settings
 $config = [
     'apiKey' => 'APIKEY',
-    'url' => 'http://api.uptimerobot.com'
+    'url' => 'https://api.uptimerobot.com'
 ];
 
 try {

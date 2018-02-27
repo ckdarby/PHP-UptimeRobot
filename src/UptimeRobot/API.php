@@ -66,7 +66,13 @@ class API
             throw new \Exception('There was an error while making the request');
         }
 
-        return json_decode($this->contents, true);
+        $jsonDecodeContent = json_decode($this->contents, true);
+
+        if(is_null($jsonDecodeContent)) {
+            throw new \Exception('Unable to decode JSON response');
+        }
+
+        return $jsonDecodeContent;
     }
 
     /**
@@ -82,6 +88,7 @@ class API
             CURLOPT_HEADER => false,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_SSL_VERIFYPEER => false,
+            CURLOPT_FOLLOWLOCATION => true
         ];
 
         if (isset($options['timeout'])) {
